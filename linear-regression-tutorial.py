@@ -178,3 +178,6 @@ experiment_3 = train_model('two_inputs', model_3, training_df, 'FARE', settings_
 
 ml_edu.results.plot_experiment_metrics(experiment_3, ['rmse'])
 ml_edu.results.plot_model_predictions(experiment_3, training_df, 'FARE')
+
+#Comparing experiments
+ml_edu.results.compare_experiment([experiment_1, experiment_3], ['rmse'], training_df, training_df['FARE'].values)
